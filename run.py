@@ -18,32 +18,6 @@ st.set_page_config(page_title="PhonePe Dashboard", layout="wide")
 st.sidebar.title("📊 PhonePe Dashboard")
 
 
-background_image_url = "https://i.imgur.com/example.jpg"
-
-page_bg_img = f"""
-<style>
-[data-testid="stAppViewContainer"] {{
-    background-image: url("{background_image_url}");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}}
-
-[data-testid="stSidebar"] > div:first-child {{
-    background: rgba(255, 255, 255, 0.8);
-}}
-
-.block-container {{
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 2rem;
-    border-radius: 10px;
-}}
-</style>
-"""
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
-
 page = st.sidebar.selectbox("Navigate", [
     "Home", "Transactions", "Insurance",
     "User Registrations", "Engagement & Growth", "Device Dominance"
